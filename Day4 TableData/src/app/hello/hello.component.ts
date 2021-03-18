@@ -42,14 +42,14 @@ export class HelloComponent implements OnInit {
     },
 
     {
-      Id: 2,
+      Id: 4,
       Title: "Bottle",
       Color: "Grey",
       Price:5,
       ExpiryDate:"1-5-2021",
     },
     {
-      Id: 3,
+      Id: 5,
       Title: "Paper",
       Color: "Black",
       Price: 100,
