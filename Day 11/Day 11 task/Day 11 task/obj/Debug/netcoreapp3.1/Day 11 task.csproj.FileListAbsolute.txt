@@ -1,0 +1,13 @@
+C:\Users\admin\source\repos\Day 11 task\Day 11 task\obj\Debug\netcoreapp3.1\Day 11 task.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\Day 11 task\Day 11 task\obj\Debug\netcoreapp3.1\Day 11 task.AssemblyInfo.cs
+C:\Users\admin\source\repos\Day 11 task\Day 11 task\obj\Debug\netcoreapp3.1\Day 11 task.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Day 11 task\Day 11 task\bin\Debug\netcoreapp3.1\Day 11 task.exe
+C:\Users\admin\source\repos\Day 11 task\Day 11 task\bin\Debug\netcoreapp3.1\Day 11 task.deps.json
+C:\Users\admin\source\repos\Day 11 task\Day 11 task\bin\Debug\netcoreapp3.1\Day 11 task.runtimeconfig.json
+C:\Users\admin\source\repos\Day 11 task\Day 11 task\bin\Debug\netcoreapp3.1\Day 11 task.runtimeconfig.dev.json
+C:\Users\admin\source\repos\Day 11 task\Day 11 task\bin\Debug\netcoreapp3.1\Day 11 task.dll
+C:\Users\admin\source\repos\Day 11 task\Day 11 task\bin\Debug\netcoreapp3.1\Day 11 task.pdb
+C:\Users\admin\source\repos\Day 11 task\Day 11 task\obj\Debug\netcoreapp3.1\Day 11 task.dll
+C:\Users\admin\source\repos\Day 11 task\Day 11 task\obj\Debug\netcoreapp3.1\Day 11 task.pdb
+C:\Users\admin\source\repos\Day 11 task\Day 11 task\obj\Debug\netcoreapp3.1\Day 11 task.genruntimeconfig.cache
+C:\Users\admin\source\repos\Day 11 task\Day 11 task\obj\Debug\netcoreapp3.1\Day 11 task.csprojAssemblyReference.cache

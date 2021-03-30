@@ -1,0 +1,36 @@
+C:\Users\sachin.saini\source\repos\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.csprojAssemblyReference.cache
+C:\Users\sachin.saini\source\repos\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.AssemblyInfoInputs.cache
+C:\Users\sachin.saini\source\repos\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.AssemblyInfo.cs
+C:\Users\sachin.saini\source\repos\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.csproj.CoreCompileInputs.cache
+C:\Users\sachin.saini\source\repos\sachin\Console App\bin\Debug\netcoreapp3.1\Console App.exe
+C:\Users\sachin.saini\source\repos\sachin\Console App\bin\Debug\netcoreapp3.1\Console App.deps.json
+C:\Users\sachin.saini\source\repos\sachin\Console App\bin\Debug\netcoreapp3.1\Console App.runtimeconfig.json
+C:\Users\sachin.saini\source\repos\sachin\Console App\bin\Debug\netcoreapp3.1\Console App.runtimeconfig.dev.json
+C:\Users\sachin.saini\source\repos\sachin\Console App\bin\Debug\netcoreapp3.1\Console App.dll
+C:\Users\sachin.saini\source\repos\sachin\Console App\bin\Debug\netcoreapp3.1\Console App.pdb
+C:\Users\sachin.saini\source\repos\sachin\Console App\bin\Debug\netcoreapp3.1\core.dll
+C:\Users\sachin.saini\source\repos\sachin\Console App\bin\Debug\netcoreapp3.1\Infrastructure.dll
+C:\Users\sachin.saini\source\repos\sachin\Console App\bin\Debug\netcoreapp3.1\core.pdb
+C:\Users\sachin.saini\source\repos\sachin\Console App\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\Users\sachin.saini\source\repos\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.csproj.CopyComplete
+C:\Users\sachin.saini\source\repos\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.dll
+C:\Users\sachin.saini\source\repos\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.pdb
+C:\Users\sachin.saini\source\repos\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.genruntimeconfig.cache
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\bin\Debug\netcoreapp3.1\Console App.exe
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\bin\Debug\netcoreapp3.1\Console App.deps.json
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\bin\Debug\netcoreapp3.1\Console App.runtimeconfig.json
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\bin\Debug\netcoreapp3.1\Console App.runtimeconfig.dev.json
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\bin\Debug\netcoreapp3.1\Console App.dll
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\bin\Debug\netcoreapp3.1\Console App.pdb
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\bin\Debug\netcoreapp3.1\core.dll
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\bin\Debug\netcoreapp3.1\Infrastructure.dll
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\bin\Debug\netcoreapp3.1\core.pdb
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.csprojAssemblyReference.cache
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.AssemblyInfoInputs.cache
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.AssemblyInfo.cs
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.csproj.CopyComplete
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.dll
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.pdb
+C:\Users\admin\OneDrive - Taazaa Tech Pvt Ltd\sachin\Console App\obj\Debug\netcoreapp3.1\Console App.genruntimeconfig.cache

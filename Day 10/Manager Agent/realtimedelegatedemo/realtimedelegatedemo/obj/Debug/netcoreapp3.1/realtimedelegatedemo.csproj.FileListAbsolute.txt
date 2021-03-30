@@ -1,0 +1,4 @@
+C:\Users\admin\source\repos\realtimedelegatedemo\realtimedelegatedemo\obj\Debug\netcoreapp3.1\realtimedelegatedemo.csprojAssemblyReference.cache
+C:\Users\admin\source\repos\realtimedelegatedemo\realtimedelegatedemo\obj\Debug\netcoreapp3.1\realtimedelegatedemo.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\realtimedelegatedemo\realtimedelegatedemo\obj\Debug\netcoreapp3.1\realtimedelegatedemo.AssemblyInfo.cs
+C:\Users\admin\source\repos\realtimedelegatedemo\realtimedelegatedemo\obj\Debug\netcoreapp3.1\realtimedelegatedemo.csproj.CoreCompileInputs.cache
