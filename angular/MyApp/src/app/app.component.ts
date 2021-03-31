@@ -7,32 +7,48 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'My Tshirt';
+  title = 'Angular Demo';
 
-  a=250;
-  b=200;
-  imgsource= "../assets/TshirtFront.jpg"
 
-  setWidth():void
+  showDataBindingDemo=true;
+  showDirectiveDemo=false;
+
+  showdbdemo():void
   {
-    this.a=200;
-    this.b=200;
+    this.showDataBindingDemo=true;
+    this.showDirectiveDemo=false;
   }
 
-  setDefault():void
-  {
-    this.a=100;
-    this.b=150;
+  showdirectivedemo():void{
+    this.showDataBindingDemo=false;
+    this.showDirectiveDemo=true;
+
   }
 
-  changefront():void
-  {
-    this.imgsource="../assets/Tshirtback.jpg"
-  }
+  // a=250;
+  // b=200;
+  // imgsource= "../assets/TshirtFront.jpg"
 
-  changeback():void
-  {
-    this.imgsource="../assets/TshirtFront.jpg"
-  }
+  // setWidth():void
+  // {
+  //   this.a=200;
+  //   this.b=200;
+  // }
+
+  // setDefault():void
+  // {
+  //   this.a=100;
+  //   this.b=150;
+  // }
+
+  // changefront():void
+  // {
+  //   this.imgsource="../assets/Tshirtback.jpg"
+  // }
+
+  // changeback():void
+  // {
+  //   this.imgsource="../assets/TshirtFront.jpg"
+  // }
   
 }

@@ -3,11 +3,15 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { TshirtdatabindingComponent } from './tshirtdatabinding/tshirtdatabinding.component';
+import { StructuredirectiveComponent } from './structuredirective/structuredirective.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TshirtdatabindingComponent,
+    StructuredirectiveComponent
   ],
   imports: [
     BrowserModule,
