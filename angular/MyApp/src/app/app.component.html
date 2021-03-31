@@ -1,0 +1,65 @@
+<div class="container">
+
+  <h1 class="text-center">{{title}}</h1>
+
+
+  <div class="row">
+
+    <div class="col-md-2">
+
+    </div>
+
+    <div class="col-md-4">
+      <input type="number"   [(ngModel)]=a  ><br><br>
+    </div>
+
+    <div class="col-md-4">
+      
+ <input type="number"  [(ngModel)]=b  ><br><br>
+    </div>
+
+    <div class="col-md-2">
+      
+    </div>
+  </div>
+
+  <hr>
+
+<div class="row">
+  <div  class="col=md-6"></div>
+
+</div>
+
+
+<div  class="col=md-6">
+  <img (mouseenter)="changefront()"  [src]='imgsource'  (mouseleave)="changeback()" [style.width.px]='a'  [style.height.px]='b' alt=""  style="height: 200px;  width: 150px;" >
+  
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+ 
+ 
+
+
+ 
+
+
+ 
+ <!-- <button (click)='setDefault' style="height: 50px; width: 100px;"  onmouseover="changeIMG"> set default</button> -->
+<!--<input type="number" [(ngModel)]=b />
+<img src="" alt="">
+<button (click)='setDefault'></button> -->
+<!-- [(ngModel)]=a [style.height.px]='a',  [style.width.px]='a' 
+[(ngModel)]=a [style.height.px]='a',  [style.width.px]='a'  -->
