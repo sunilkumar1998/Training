@@ -12,43 +12,27 @@ export class AppComponent {
 
   showDataBindingDemo=true;
   showDirectiveDemo=false;
+  showproductcomponent=false;
 
   showdbdemo():void
   {
     this.showDataBindingDemo=true;
+    this.showproductcomponent=false;
+    this.showDirectiveDemo=false;
+  }
+
+  showProduct():void{
+    this.showDataBindingDemo=false;
+    this.showproductcomponent=true;
     this.showDirectiveDemo=false;
   }
 
   showdirectivedemo():void{
     this.showDataBindingDemo=false;
     this.showDirectiveDemo=true;
+    this.showproductcomponent=false;
 
   }
 
-  // a=250;
-  // b=200;
-  // imgsource= "../assets/TshirtFront.jpg"
-
-  // setWidth():void
-  // {
-  //   this.a=200;
-  //   this.b=200;
-  // }
-
-  // setDefault():void
-  // {
-  //   this.a=100;
-  //   this.b=150;
-  // }
-
-  // changefront():void
-  // {
-  //   this.imgsource="../assets/Tshirtback.jpg"
-  // }
-
-  // changeback():void
-  // {
-  //   this.imgsource="../assets/TshirtFront.jpg"
-  // }
   
 }

@@ -1,4 +1,5 @@
 <div class="container">
+  
   <h1 class="text-center">{{title}}</h1>
   <br>
   <br>
@@ -8,8 +9,15 @@
       <button (click)='showdbdemo()'  class="btn btn-danger"> Data Binding demo</button>
     </div>
 
+    
+      <div class="col-md-3">
+        <button (click)='showProduct()'  class="btn btn-warning"> Product data</button>
+      </div>
+      
+
+    
     <div class="col-md-3">
-      <button (click)='showdirectivedemo()'  class="btn btn-warning"> Structural Directive demo</button>
+      <button (click)='showdirectivedemo()'   class="btn btn-warning"> Structural Directive demo</button>
     </div>
 
   </div>
@@ -18,8 +26,12 @@
 
 
   <div class="row">
-<app-tshirtdatabinding *ngIf="showDataBindingDemo"></app-tshirtdatabinding>
+    <div class="col-md-12">
+
+    <app-tshirtdatabinding *ngIf="showDataBindingDemo"></app-tshirtdatabinding>
 <app-structuredirective *ngIf="showDirectiveDemo"></app-structuredirective>
+<app-product *ngIf="showproductcomponent"></app-product>
 
   </div>
+</div>
 </div>
