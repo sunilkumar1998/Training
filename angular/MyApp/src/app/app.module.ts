@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { TshirtdatabindingComponent } from './tshirtdatabinding/tshirtdatabinding.component';
 import { StructuredirectiveComponent } from './structuredirective/structuredirective.component';
 import { ProductComponent } from './product/product.component';
+import { PurchaseComponent } from './purchase/purchase.component';
+import { PurchaseOrderComponent } from './purchase-order/purchase-order.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {  MatExpansionModule} from '@angular/material/expansion';
+
 
 
 @NgModule({
@@ -13,11 +18,15 @@ import { ProductComponent } from './product/product.component';
     AppComponent,
     TshirtdatabindingComponent,
     StructuredirectiveComponent,
-    ProductComponent
+    ProductComponent,
+    PurchaseComponent,
+    PurchaseOrderComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

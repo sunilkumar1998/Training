@@ -13,6 +13,7 @@ export class AppComponent {
   showDataBindingDemo=true;
   showDirectiveDemo=false;
   showproductcomponent=false;
+  showpurchasecomponent=false;
 
   showdbdemo():void
   {
@@ -30,6 +31,15 @@ export class AppComponent {
   showdirectivedemo():void{
     this.showDataBindingDemo=false;
     this.showDirectiveDemo=true;
+    this.showproductcomponent=false;
+
+  }
+
+  showpurchasedemo(): void
+  {
+    this.showpurchasecomponent=true;
+    this.showDataBindingDemo=false;
+    this.showDirectiveDemo=false;
     this.showproductcomponent=false;
 
   }

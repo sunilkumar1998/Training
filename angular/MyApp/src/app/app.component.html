@@ -4,13 +4,15 @@
   <br>
   <br>
 
+<!-- <button class="btn btn-info" style="margin-left: 450px; margin-top: 10px; margin-bottom: 50px;">Master Details</button> -->
+
   <div class="row">
     <div class="col-md-3">
       <button (click)='showdbdemo()'  class="btn btn-danger"> Data Binding demo</button>
     </div>
 
     
-      <div class="col-md-3">
+      <div class="col-md-2">
         <button (click)='showProduct()'  class="btn btn-warning"> Product data</button>
       </div>
       
@@ -19,6 +21,20 @@
     <div class="col-md-3">
       <button (click)='showdirectivedemo()'   class="btn btn-warning"> Structural Directive demo</button>
     </div>
+
+    <div class="col-md-3">
+      <button  (click)='showpurchasedemo()'   class="btn btn-info"> master details</button>
+    </div>
+
+
+    <!-- <div class="col-md-2">
+      <button (click)='showpurchasedemo()' class="btn btn-warning"> Purchase</button>
+    </div> -->
+
+    <!-- <div class="col-md-2">
+      <button  (click)='showpurchaseorderdemo()'  class="btn btn-warning"> Purchase-order</button>
+    </div> -->
+
 
   </div>
 
@@ -31,6 +47,8 @@
     <app-tshirtdatabinding *ngIf="showDataBindingDemo"></app-tshirtdatabinding>
 <app-structuredirective *ngIf="showDirectiveDemo"></app-structuredirective>
 <app-product *ngIf="showproductcomponent"></app-product>
+<app-purchase *ngIf=" showpurchasecomponent"></app-purchase> 
+<!-- <app-purchase-order *ngIf=" showpurchaseordercomponent"></app-purchase-order> -->
 
   </div>
 </div>

@@ -1,0 +1,49 @@
+<div class="row">
+    <h2 class="text danger text center">master details</h2>
+</div>
+
+<div class="row">
+
+    <!-- <table class='table'>
+        <thead class="thead-dark">
+            <tr>
+                <th> Purchase Id</th>
+                <th> Purchase Name </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of purchases">
+                <td>
+                    {{p. PurchaseId}}
+                </td>
+
+                <td>
+                    <button class="btn btn-link"> {{p.PurchaseName}}</button>
+                </td>
+            </tr>
+        </tbody>
+    </table> -->
+
+
+    <div class="col-md-12">
+        <mat-accordion class="example-headers-align" >
+            <mat-expansion-panel *ngFor="let p of purchases">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h2>{{p.PurchaseId}}</h2>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        <h2 class="text-info">
+                            {{p.PurchaseName}}
+                        </h2>
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <app-purchase-order [PurchaseItem]='p'></app-purchase-order>
+
+
+            </mat-expansion-panel>
+        </mat-accordion>
+
+    </div>
+</div>
