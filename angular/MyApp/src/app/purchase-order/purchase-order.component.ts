@@ -16,6 +16,7 @@ export class PurchaseOrderComponent implements OnInit, OnChanges {
   }
   ngOnChanges(): void
   {
+    console.log("on changes called");
     this.PurchaseItem.Items.forEach(i =>{
       this.Price=this.Price +i.Price;
     })

@@ -14,8 +14,8 @@ export class TshirtdatabindingComponent implements OnInit {
 
   title = 'My Tshirt';
 
-  a=250;
-  b=200;
+  a=550;
+  b=500;
   imgsource= "../assets/TshirtFront.jpg"
 
   setWidth():void
