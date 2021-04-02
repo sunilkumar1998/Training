@@ -20,18 +20,22 @@ export class AppComponent {
     this.showDataBindingDemo=true;
     this.showproductcomponent=false;
     this.showDirectiveDemo=false;
+    
+  this.showpurchasecomponent=false;
   }
 
   showProduct():void{
     this.showDataBindingDemo=false;
     this.showproductcomponent=true;
     this.showDirectiveDemo=false;
+    this.showpurchasecomponent=false;
   }
 
   showdirectivedemo():void{
     this.showDataBindingDemo=false;
     this.showDirectiveDemo=true;
     this.showproductcomponent=false;
+    this.showpurchasecomponent=false;
 
   }
 

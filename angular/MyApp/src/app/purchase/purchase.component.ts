@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 import { IPurchaseitem } from './IPurchaseItem';
 
 @Component({
@@ -10,107 +11,109 @@ export class PurchaseComponent implements OnInit {
 
   purchases: IPurchaseitem[] = [];
 
-  constructor() { }
+  constructor(private dataService: DataService) {
+    
+   }
 
   ngOnInit(): void {
-    this.purchases=this.getPurchase();
+     this.purchases=this.dataService.getPurchase();
   }
 
-  getPurchase():IPurchaseitem[]
-  {
+//   getPurchase():IPurchaseitem[]
+//   {
 
-    return[
-     {
-        PurchaseId:101,
-      PurchaseName:"Mouse",
-      Purchasedate:"1-12-2019",
-      VendorName:"abc",
-      Items:[
-        {
-        Id:1,
-        Title:"Pen",
-        Price:56,
-        ExpiryDate:"09-2-2020",
-        isInstock:true,
-        Quantity:370},
+//     return[
+//      {
+//         PurchaseId:101,
+//       PurchaseName:"Mouse",
+//       Purchasedate:"1-12-2019",
+//       VendorName:"abc",
+//       Items:[
+//         {
+//         Id:1,
+//         Title:"Pen",
+//         Price:56,
+//         ExpiryDate:"09-2-2020",
+//         isInstock:true,
+//         Quantity:370},
 
-        {
-          Id:1,
-          Title:"Pen",
-          Price:56,
-          ExpiryDate:"09-2-2020",
-          isInstock:true,
-          Quantity:370},
+//         {
+//           Id:1,
+//           Title:"Pen",
+//           Price:56,
+//           ExpiryDate:"09-2-2020",
+//           isInstock:true,
+//           Quantity:370},
   
         
-      ],
-     }, 
+//       ],
+//      }, 
      
 
-  {
-    PurchaseId:102,
-    PurchaseName:"Keyboard",
-    Purchasedate:"1-12-2019",
-    VendorName:"abc",
+//   {
+//     PurchaseId:102,
+//     PurchaseName:"Keyboard",
+//     Purchasedate:"1-12-2019",
+//     VendorName:"abc",
     
-    Items:[
-      {
-        Id:2,
-        Title:"Pencil",
-        Price:16,
-        ExpiryDate:"01-04-2010",
-        isInstock:false,
-        Quantity:20
+//     Items:[
+//       {
+//         Id:2,
+//         Title:"Pencil",
+//         Price:16,
+//         ExpiryDate:"01-04-2010",
+//         isInstock:false,
+//         Quantity:20
     
-       },
+//        },
 
-       {
-        Id:1,
-        Title:"Pen",
-        Price:56,
-        ExpiryDate:"09-2-2020",
-        isInstock:true,
-        Quantity:370},
+//        {
+//         Id:1,
+//         Title:"Pen",
+//         Price:56,
+//         ExpiryDate:"09-2-2020",
+//         isInstock:true,
+//         Quantity:370},
 
-    ]
+//     ]
 
-  },
+//   },
 
-  {
-    PurchaseId:103,
-  PurchaseName:"LCD",
-  Purchasedate:"1-12-2019",
-  VendorName:"abc",
-  Items:[
-    {
-    Id:1,
-    Title:"Pen",
-    Price:56,
-    ExpiryDate:"09-2-2020",
-    isInstock:true,
-    Quantity:370}],
- },
+//   {
+//     PurchaseId:103,
+//   PurchaseName:"LCD",
+//   Purchasedate:"1-12-2019",
+//   VendorName:"abc",
+//   Items:[
+//     {
+//     Id:1,
+//     Title:"Pen",
+//     Price:56,
+//     ExpiryDate:"09-2-2020",
+//     isInstock:true,
+//     Quantity:370}],
+//  },
 
- {
-  PurchaseId:104,
-PurchaseName:"CPU",
-Purchasedate:"1-12-2019",
-VendorName:"abc",
-Items:[
-  {
-  Id:1,
-  Title:"Pen",
-  Price:56,
-  ExpiryDate:"09-2-2020",
-  isInstock:true,
-  Quantity:370}],
-},
+//  {
+//   PurchaseId:104,
+// PurchaseName:"CPU",
+// Purchasedate:"1-12-2019",
+// VendorName:"abc",
+// Items:[
+//   {
+//   Id:1,
+//   Title:"Pen",
+//   Price:56,
+//   ExpiryDate:"09-2-2020",
+//   isInstock:true,
+//   Quantity:370}],
+// },
  
 
-    ]
+//     ]
 
     
-  }
+//   }
 
     
 }
