@@ -12,7 +12,7 @@ export class ProductComponent implements OnInit {
 
 
    products: IProduct[] = [];
-  constructor(private handleError:MyErrorhandlerService, private dataservice: DataService) { }
+  constructor(private handleerror:MyErrorhandlerService, private dataservice: DataService) { }
 
   ngOnInit(): void {
       this.products=this.dataservice.getProducts();
@@ -20,7 +20,8 @@ export class ProductComponent implements OnInit {
 
   data:any=undefined;
    generateerror(): void{
-     this.handleError.handleError(" ");
+    //  this.handleerror.handleError("");
+    this.data.sort();
     
    }
 

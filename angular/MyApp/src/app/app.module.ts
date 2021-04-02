@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {  MatExpansionModule} from '@angular/material/expansion';
 import { MyErrorhandlerService } from './my-errorhandler.service';
 import { AppRoutingModule } from './app-module-routing';
+import { DataService } from './data.service';
 
 
 
@@ -30,7 +31,7 @@ import { AppRoutingModule } from './app-module-routing';
     BrowserAnimationsModule,
     MatExpansionModule,AppRoutingModule
   ],
-  providers: [],
+  providers: [{provide:ErrorHandler, useClass:MyErrorhandlerService}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
