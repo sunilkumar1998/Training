@@ -11,6 +11,7 @@ import { PurchaseOrderComponent } from './purchase-order/purchase-order.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {  MatExpansionModule} from '@angular/material/expansion';
 import { MyErrorhandlerService } from './my-errorhandler.service';
+import { AppRoutingModule } from './app-module-routing';
 
 
 
@@ -27,7 +28,7 @@ import { MyErrorhandlerService } from './my-errorhandler.service';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatExpansionModule
+    MatExpansionModule,AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
