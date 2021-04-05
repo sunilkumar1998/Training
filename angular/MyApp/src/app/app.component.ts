@@ -7,13 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular Demo';
+  // title = 'My Angular Learning Demo';
 
 
   showDataBindingDemo=true;
   showDirectiveDemo=false;
   showproductcomponent=false;
   showpurchasecomponent=false;
+  showinput1component=false;
+  showinput2component=false;
 
   showdbdemo():void
   {
@@ -45,6 +47,18 @@ export class AppComponent {
     this.showDataBindingDemo=false;
     this.showDirectiveDemo=false;
     this.showproductcomponent=false;
+
+  }
+
+  showinputdata():void
+  {
+    this.showpurchasecomponent=false;
+    this.showDataBindingDemo=false;
+    this.showDirectiveDemo=false;
+    this.showproductcomponent=false;
+
+    this.showinput1component=true;
+  this.showinput2component=true;
 
   }
 

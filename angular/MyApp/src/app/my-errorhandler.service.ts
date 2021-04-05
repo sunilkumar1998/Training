@@ -7,7 +7,8 @@ export class MyErrorhandlerService implements ErrorHandler{
 
   constructor() { }
 handleError(error:any){
-  console.log("error will be logged later");
+  console.log("error will be handled later");
+  // throw(error);
 }
 
 

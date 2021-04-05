@@ -1,0 +1,28 @@
+import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+import { IProduct } from './product/Iproduct';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class SharedataService {
+
+  product:IProduct={
+       Id:1,
+      Title:"Pen",
+      Price:56,
+      ExpiryDate:"09-2-2020",
+      isInstock:true,
+      Quantity:370
+    }
+
+  product$ : BehaviorSubject<IProduct>
+  constructor() { 
+
+    this.product$=new BehaviorSubject(this.product);
+  }
+  setPrice(price : number){
+    this.product.Price = price; 
+    this.product$.next(this.product); 
+  }
+}

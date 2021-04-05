@@ -11,6 +11,7 @@ import { IProduct } from './Iproduct';
 export class ProductComponent implements OnInit {
 
 
+  
    products: IProduct[] = [];
   constructor(private handleerror:MyErrorhandlerService, private dataservice: DataService) { }
 
@@ -18,12 +19,7 @@ export class ProductComponent implements OnInit {
       this.products=this.dataservice.getProducts();
   }
 
-  data:any=undefined;
-   generateerror(): void{
-    //  this.handleerror.handleError("");
-    this.data.sort();
-    
-   }
+  
 
   // getProducts(): IProduct[]
   // {
