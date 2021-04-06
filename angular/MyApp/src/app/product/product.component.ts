@@ -10,10 +10,11 @@ import { IProduct } from './Iproduct';
 })
 export class ProductComponent implements OnInit {
 
-
+value:string;
+pricevalue:number;
   
    products: IProduct[] = [];
-  constructor(private handleerror:MyErrorhandlerService, private dataservice: DataService) { }
+  constructor( private dataservice: DataService) { }
 
   ngOnInit(): void {
       this.products=this.dataservice.getProducts();

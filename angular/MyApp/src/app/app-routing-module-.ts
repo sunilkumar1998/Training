@@ -5,6 +5,7 @@ import { ErrorhandlingComponent } from './errorhandling/errorhandling.component'
 import { HomeComponent } from './home/home.component';
 import { Input1Component } from './input1/input1.component';
 import { Input2Component } from './input2/input2.component';
+import { LoginformComponent } from './loginform/loginform.component';
 import { ProductComponent } from './product/product.component';
 import { PurchaseComponent } from './purchase/purchase.component';
 import { ShareDataComponent } from './sd.component';
@@ -47,6 +48,11 @@ const routes: Routes = [
     {
         path: 'globalerrorhandling',
         component:ErrorhandlingComponent,
+    },
+
+    {
+        path: 'loginform',
+        component:LoginformComponent,
     },
 
 

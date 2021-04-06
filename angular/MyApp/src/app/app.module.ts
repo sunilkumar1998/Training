@@ -1,5 +1,5 @@
 import { ErrorHandler, NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -20,6 +20,9 @@ import { ChangeColorDirective } from './change-color.directive';
 import { AttributedirectiveComponent } from './attributedirective/attributedirective.component';
 import { ErrorhandlingComponent } from './errorhandling/errorhandling.component';
 import { HomeComponent } from './home/home.component';
+import { LoginformComponent } from './loginform/loginform.component';
+import { MycustompipePipe } from './mycustompipe.pipe';
+import { ProductsearchPipe } from './productsearch.pipe';
 
 
 
@@ -37,13 +40,16 @@ import { HomeComponent } from './home/home.component';
     ChangeColorDirective,
     AttributedirectiveComponent,
     ErrorhandlingComponent,
-    HomeComponent
+    HomeComponent,
+    LoginformComponent,
+    MycustompipePipe,
+    ProductsearchPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatExpansionModule,AppRoutingModule
+    MatExpansionModule,ReactiveFormsModule,AppRoutingModule
   ],
   providers: [{provide:ErrorHandler, useClass:MyErrorhandlerService}],
   bootstrap: [AppComponent]

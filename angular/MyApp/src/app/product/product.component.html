@@ -1,5 +1,8 @@
 <br><br>
+<input type="text" placeholder="Enter item to be searched" [(ngModel)]='value' style="height: 35px; width: 220px; margin-left: 250px; border-color: black; border-radius: 7px;">
 
+<input type="number" placeholder="Enter price" [(ngModel)]='pricevalue' style="height: 35px; width: 220px; margin-left: 50px; border-color: black; border-radius: 7px;" >
+<br><br><br>
 <div class="row">
     <table class="table">
         <thead>
@@ -23,10 +26,14 @@
                 <th>
                     Quantity
                 </th>
+
+                <th>
+                    Instock
+                </th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let p of products" >
+            <tr *ngFor="let p of products | productsearch:value | mycustompipe:pricevalue" >
                 <td>   {{p.Id}} </td>
                 <td>   {{p.Title}} </td>
                 <td>   {{p.Price | currency:'INR'}} </td>

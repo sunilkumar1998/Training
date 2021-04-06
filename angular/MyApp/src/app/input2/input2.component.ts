@@ -15,6 +15,7 @@ export class Input2Component implements OnInit {
   ngOnInit(): void {
      this.ShareData.product$.subscribe(p=>{
        this.product = p; 
+       
      })
   }
 }

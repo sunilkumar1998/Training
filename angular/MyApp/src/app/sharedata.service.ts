@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+
 import { BehaviorSubject } from 'rxjs';
 import { IProduct } from './product/Iproduct';
 
@@ -21,8 +22,15 @@ export class SharedataService {
 
     this.product$=new BehaviorSubject(this.product);
   }
-  setPrice(price : number){
-    this.product.Price = price; 
-    this.product$.next(this.product); 
+  // setData(price : number){
+  //   this.product.Price = price; 
+  //   this.product$.next(this.product); 
+  // }
+
+  updateProduct(p:IProduct){
+    this.product={
+      ...p
+    }
+    this.product$.next(this.product)
   }
 }
