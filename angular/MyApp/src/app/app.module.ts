@@ -25,6 +25,11 @@ import { MycustompipePipe } from './mycustompipe.pipe';
 import { ProductsearchPipe } from './productsearch.pipe';
 
 import {MatTableModule} from '@angular/material/table';
+import { ReplaysubjectComponent } from './replaysubject/replaysubject.component';
+import { SubjectComponent } from './subject/subject.component';
+import { AsyncsubjectComponent } from './asyncsubject/asyncsubject.component';
+import { BehavioursubjectComponent } from './behavioursubject/behavioursubject.component';
+import { SubjectsInAngularComponent } from './subjects-in-angular/subjects-in-angular.component';
 
 
 @NgModule({
@@ -44,7 +49,12 @@ import {MatTableModule} from '@angular/material/table';
     HomeComponent,
     LoginformComponent,
     MycustompipePipe,
-    ProductsearchPipe
+    ProductsearchPipe,
+    ReplaysubjectComponent,
+    SubjectComponent,
+    AsyncsubjectComponent,
+    BehavioursubjectComponent,
+    SubjectsInAngularComponent
   ],
   imports: [
     BrowserModule,

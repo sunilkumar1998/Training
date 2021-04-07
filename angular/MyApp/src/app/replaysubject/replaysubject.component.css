@@ -1,0 +1,47 @@
+.wrapper {
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+button {
+    height:40px;
+    width:auto;
+    border: 0;
+    background:gray;
+    color:white;
+    cursor: pointer;
+    font-size:30px;
+    font-style: italic;   
+}
+
+button:hover{
+  background: red;
+  animation-play-state: running;
+}
+
+.data1{
+  font-size: 25px;
+  color: brown;
+  font-style: normal;
+}
+
+.data2{
+  font-size: 25px;
+  color: blue;
+  font-style: normal;
+}
+
+.data3{
+  font-size: 25px;
+  color: olive;
+  font-style: normal;
+}
+
+h2{
+  text-align: center;
+  color: red;
+  font-style: italic;
+  font-size: 40px;
+}
