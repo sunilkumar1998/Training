@@ -51,5 +51,6 @@ export class SubjectComponent implements OnInit {
 
   }
   ngOnDestroy() {
+    
 
   }}

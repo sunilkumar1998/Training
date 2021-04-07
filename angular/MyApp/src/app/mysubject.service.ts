@@ -18,7 +18,7 @@ export class MysubjectService {
 
     setInterval(() => {
       this.counter = this.counter + 1;
-      if (this.counter > 10) {
+      if (this.counter > 20) {
         this.count.complete();
       }
       this.count.next(this.counter);

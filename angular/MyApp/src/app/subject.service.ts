@@ -9,21 +9,19 @@ export class SubjectService {
 
   counter = 0;
   count$: Observable<any>;
-  //count: Subject<number>;
+ 
    count: ReplaySubject<number>;
-  // count: BehaviorSubject<number>;
-  //private count: Subject<number>;
+  
 
   constructor() {
-    // this.count = new BehaviorSubject(100);
-    //this.count = new AsyncSubject();
+   
      this.count = new ReplaySubject();
-    //this.count = new Subject();
+    
     this.count$ = this.count.asObservable();
 
     setInterval(() => {
       this.counter = this.counter + 1;
-      if (this.counter > 10) {
+      if (this.counter > 20) {
         this.count.complete();
       }
       this.count.next(this.counter);

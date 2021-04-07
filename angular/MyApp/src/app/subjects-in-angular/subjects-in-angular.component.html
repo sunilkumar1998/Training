@@ -1,23 +1,50 @@
 
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
 
-<div>
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+
+
+<div id="menu-outer"> 
+<div class="table">
     <ul class="navbar-nav mr-auto" >
 
 
         <li class="nav-item">
-            <a class="nav-link" routerLink='/mysubject/subject'>Data Binding</a>
+            <a class="nav-link" routerLink='/mysubject/subject'>subject</a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" routerLink='/mysubject/behavioursubject'>Data Binding</a>
+            <a class="nav-link" routerLink='/mysubject/behavioursubject'>Behaviour Subject</a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" routerLink='/mysubject/replaysubject'>Data Binding</a>
+            <a class="nav-link" routerLink='/mysubject/replaysubject'>Replay Subject</a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" routerLink='/mysubject/asyncsubject'>Data Binding</a>
+            <a class="nav-link" routerLink='/mysubject/asyncsubject'>Async Subject</a>
         </li>
         
 
@@ -28,4 +55,10 @@
 
     </ul>
     <router-outlet></router-outlet>
+</div>
+<footer style="color: gray;" class="text-center">
+            <p>An RxJS Subject is a special type of Observable that allows values to be multicasted to many Observers. </p>
+
+        </footer>
+
 </div>

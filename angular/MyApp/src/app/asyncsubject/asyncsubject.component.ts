@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { SubjectService } from '../subject.service';
+import {  AsyncsubjectService } from '../asyncsubject.service';
 
 @Component({
   selector: 'app-asyncsubject',
@@ -9,7 +9,7 @@ import { SubjectService } from '../subject.service';
 })
 export class AsyncsubjectComponent implements OnInit {
 
-  title = 'RxJS Subjects Demo';
+  title = 'Async Subject Demo';
   observer1$: Subscription;
   observer2$: Subscription;
   observer3$: Subscription;
@@ -21,7 +21,7 @@ export class AsyncsubjectComponent implements OnInit {
   showObserver3 = false;
   
 
-  constructor(private appservice: SubjectService) {
+  constructor(private appservice:  AsyncsubjectService) {
 
   }
 

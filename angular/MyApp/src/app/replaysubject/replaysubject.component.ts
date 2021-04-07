@@ -9,7 +9,7 @@ import { SubjectService } from '../subject.service';
 })
 export class ReplaysubjectComponent implements OnInit {
 
-  title = 'RxJS Subjects Demo';
+  title = 'Replay Subjects Demo';
   observer1$: Subscription;
   observer2$: Subscription;
   observer3$: Subscription;

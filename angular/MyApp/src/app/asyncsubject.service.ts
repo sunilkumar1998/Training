@@ -8,10 +8,8 @@ export class AsyncsubjectService {
 
   counter = 0;
   count$: Observable<any>;
-  //count: Subject<number>;
+  
    count: AsyncSubject<number>;
-  // count: BehaviorSubject<number>;
-  //private count: Subject<number>;
 
   constructor() {
 
@@ -22,7 +20,7 @@ export class AsyncsubjectService {
 
     setInterval(() => {
       this.counter = this.counter + 1;
-      if (this.counter > 10) {
+      if (this.counter > 20) {
         this.count.complete();
       }
       this.count.next(this.counter);

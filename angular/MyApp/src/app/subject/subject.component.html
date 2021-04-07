@@ -1,108 +1,42 @@
-<!-- <p>subject works!</p>
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #128C7E;" >
-    <a class="navbar-brand"  routerLink='/Home'>Sunil</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button> -->
-
-      <!-- DataBining -->
-
-      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-
-
-              <li class="nav-item">
-                  <a class="nav-link" routerLink='/Tshirt'>Data Binding</a>
-              </li>
-
-
-              <li class="nav-item">
-                  <a class="nav-link" routerLink='/Product'>Product</a>
-              </li>
-
-              <li class="nav-item">
-                  <a class="nav-link " routerLink='/Purchase'>master Details</a>
-              </li>
-
-              <li class="nav-item">
-                  <a class="nav-link" routerLink='/attribute'>Attribute directive</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" routerLink='/sharedatawithservice'>Shared data with service</a>
-              </li>
-
-              <li class="nav-item">
-                  <a class="nav-link" routerLink='/globalerrorhandling'>generate error</a>
-              </li>
-
-              <li class="nav-item">
-                  <a class="nav-link" routerLink='/loginform'>Reactive Form</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" routerLink='/rxjssubject'>rxjs Subject</a>
-            </li>
-
-          </ul>
-
-      </div>
-      </nav> -->
-
-      <div style="justify-content: center; margin-bottom: 10px;" class="nav nav-tabs">
-        <button class="nav-link" type="button"  style="margin-right: 15px;">HTML Table</button>
-        <button class="nav-link" type="button" > Angular Material Table</button>
-
-        <button class="nav-link" type="button"  style="margin-right: 15px;">HTML Table</button>
-        <button class="nav-link" type="button" > Angular Material Table</button>
+<br>
+<h2 class="text-center">{{title}}</h2>
+ 
+<div class="row">
+    <div class="col-md-1"></div>
+  <div class="col-md-3">
+    <button (click)='subscribe1()' class="btn btn-info">Subscriber 1 </button>
+    <hr />
+    <div *ngFor="let p of observer1">
+      <p class="data1"> {{p}}</p>
     </div>
-
-    <h1>{{title}}</h1>
-
-<div class="wrapper">
-    <div class="row">
-        <div class="col-md-3">
-            
-                <button class="btn btn-info" (click)='subscribe1()'>Subscriber 1 </button>
-                <hr />
-                <div *ngFor="let p of observer1">
-                  <p class="data1"> {{p}}</p>
-                </div>
-                <div *ngIf="showObserver1">
-                  complete
-                
-              </div>
-
-              <div class="col-md-3">
-                
-                    <button class="btn btn-info" (click)='susbcribe2()'>Subscriber 2 </button>
-                    <hr />
-                    <div *ngFor="let p of observer2">
-                      <p class="data2"> {{p}}</p>
-                    </div>
-                    <div *ngIf="showObserver2">
-                      complete
-                    
-                  </div>
-
-              </div>
-
-              <div class="col-md-3">
-            
-                    <button class="btn btn-info" (click)='susbcribe3()'>Subscriber 3 </button>
-                    <hr />
-                    <div *ngFor="let p of observer3">
-                      <p class="data3"> {{p}}</p>
-                    </div>
-                    <div *ngIf="showObserver3">
-                      complete
-                    </div>
-                  
-              </div>
-
-        </div>
+    <div *ngIf="showObserver1">
+      complete
     </div>
-    
-   
-
-  
   </div>
+      <div class="col-md-1"></div>
+  <div class="col-md-3">
+    <button (click)='susbcribe2()' class="btn btn-info">Subscriber 2 </button>
+    <hr />
+    <div *ngFor="let p of observer2">
+      <p class="data2"> {{p}}</p>
+    </div>
+    <div *ngIf="showObserver2">
+      complete
+    </div>
+  </div>
+      <div class="col-md-1"></div>
+  <div class="col-md-3">
+    <button (click)='susbcribe3()' class="btn btn-info">Subscriber 3 </button>
+    <hr />
+    <div *ngFor="let p of observer3">
+      <p class="data3"> {{p}}</p>
+    </div>
+    <div *ngIf="showObserver3">
+      complete
+    </div>
+  </div>
+
+      <footer style="color: gray;" class="text-center">
+            <p>A Subject is like an Observable, but can multicast to many Observers. Subjects are like EventEmitters: they maintain a registry of many listeners.</p>
+
+        </footer>
