@@ -1,46 +1,49 @@
 <div class="container">
 
-  <h1 class="text-center">{{title}}</h1> <br>
+    <h1 class="text-center" style="margin-right: 50px;">{{title}}</h1> <br>
+    <h2 style="justify-content: center; margin-left: 370px;">
+        Hover over the picture to change it
+    </h2>
+    <br>
 
 
-  <div class="row">
+    <div class="row">
 
 
-    
-    <div class="col-md-2">
+
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-4">
+            <input type="numberod" [(ngModel)]=a style="margin-left: 150px;"><br><br>
+        </div>
+
+
+
+        <div class="col-md-4">
+
+            <input type="number" [(ngModel)]=b><br><br>
+        </div>
+
+        <div class="col-md-2">
+
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col=md-6"></div>
 
     </div>
-    <div class="col-md-4">
-      <input type="numberod" [(ngModel)]=a><br><br>
+
+    <div class="text-center">
+        <div class="col=md-6">
+            <img (mouseenter)="changefront()" [src]='imgsource' (mouseleave)="changeback()" [style.width.px]='a' [style.height.px]='b' alt="" style="height: 200px;  width: 150px;">
+
+
+        </div>
     </div>
-
-
-
-    <div class="col-md-4">
-
-      <input type="number" [(ngModel)]=b><br><br>
-    </div>
-
-    <div class="col-md-2">
-
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="row">
-    <div class="col=md-6"></div>
-
-  </div>
-
-<div class="text-center">
-  <div class="col=md-6" >
-    <img (mouseenter)="changefront()" [src]='imgsource' (mouseleave)="changeback()" [style.width.px]='a'
-      [style.height.px]='b' alt="" style="height: 200px;  width: 150px;">
-
-
-  </div>
-</div>
 
 
 
@@ -51,6 +54,6 @@
 </div>
 <br><br><br><br><br>
 
-<p class="text-center" style="color: blue;">NOTE: This is an example of Data Binding where we have provided two input fields for entering height and width of an image <br>
-  by entering the dimension the size of image will change accordingly, also when we hover the curson on image, a new image will be visible
+<p class="text-center" style="color: gray;">This is an example of Data Binding where we have provided two input fields for entering height and width of an image <br> by entering the dimension the size of image will change accordingly, also when we hover the curson on image, a new image will be
+    visible
 </p>

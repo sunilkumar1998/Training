@@ -12,6 +12,7 @@ export class ProductComponent implements OnInit {
 
 value:string;
 pricevalue:number;
+showTable: boolean = true;
   
    products: IProduct[] = [];
   constructor( private dataservice: DataService) { }
@@ -20,6 +21,10 @@ pricevalue:number;
       this.products=this.dataservice.getProducts();
   }
 
+  
+  displayedColumns: string[] = ['ID', 'Name', 'Price', 'Quantity', 'Expiry Date'];
+
+}
   
 
   // getProducts(): IProduct[]
@@ -77,4 +82,4 @@ pricevalue:number;
   //    },
   //   ]
   // }
-}
+

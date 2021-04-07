@@ -24,6 +24,7 @@ import { LoginformComponent } from './loginform/loginform.component';
 import { MycustompipePipe } from './mycustompipe.pipe';
 import { ProductsearchPipe } from './productsearch.pipe';
 
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { ProductsearchPipe } from './productsearch.pipe';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatExpansionModule,ReactiveFormsModule,AppRoutingModule
+    MatExpansionModule,ReactiveFormsModule,AppRoutingModule,
+    MatTableModule,
   ],
   providers: [{provide:ErrorHandler, useClass:MyErrorhandlerService}],
   bootstrap: [AppComponent]

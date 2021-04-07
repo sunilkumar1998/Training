@@ -1,5 +1,5 @@
-
-<br><br>
+<br>
+<br>
 <br><br>
 <!-- <input type="number" placeholder="Enter price" [(ngModel)]='price' ><br><br>
 <button class="btn btn-danger" (click)='setPrice()'>Set Price</button> -->
@@ -9,79 +9,61 @@
 <div class="container">
     <div class="row">
 
-        
-<form (ngSubmit)='updateproduct()'  [formGroup]='dataform' novalidate class="form">
-   
-   
-    <input formControlName='Id'    
-    type="number" 
- 
-    
-    style="width: 240px; height: 30px;">
-  
-    <div class="alert alert-danger" *ngIf="dataform?.get('Id')?.hasError('required') && dataform?.get('Id')?.touched">
-        Id is a required field
-    </div>
-    
 
-    <input formControlName='Title'
-    type="text"
-    class="form-control"
-   
-    
-    style="margin-top: 15px; height: 30px; width: 240px;">
-
-    <div class="alert alert-danger" *ngIf="!dataform?.get('Title')?.valid && dataform?.get('Title')?.touched">
-        password is a required field
-    </div>
-  
-
-    <input formControlName='Price'
-    type="number"
-    class="form-control"
-
-        style="margin-top: 15px; height: 30px; width: 240px;">
-
-   
-        <div class="alert alert-danger" *ngIf="dataform?.get('Price')?.dirty && dataform?.get('Price')?.errors && dataform?.get('Price')?.errors?.priceRange">
-            price must be between 0 to 1000
-        </div>
-
-    <input formControlName='Quantity'
-    type="mumber"
-    class="form-control"
-    
-    
-    style="margin-top: 25px; height: 30px; width: 240px;">
-
-    <div class="alert alert-danger" *ngIf="dataform?.get('Quantity')?.dirty && dataform?.get('Quantity')?.errors && dataform?.get('Quantity')?.errors?.QuantityRange">
-        Quantity must be between 0 to 1000
-    </div>
-  
-    <input formControlName='ExpiryDate'
-    type="text"
-    class="form-control"
-    
-    
-    style="margin-top: 25px; height: 30px; width: 240px;">
+        <form (ngSubmit)='updateproduct()' [formGroup]='dataform' novalidate class="form">
 
 
-    <input formControlName='isInstock'
-    type="text"
-    class="form-control"
-    
-    
-    style="margin-top: 25px; height: 30px; width: 240px;">
+            <input formControlName='Id' type="number" style="width: 240px; height: 30px;">
+
+            <div class="alert alert-danger" *ngIf="dataform?.get('Id')?.hasError('required') && dataform?.get('Id')?.touched">
+                Id is a required field
+            </div>
 
 
-    
-    <br>
-    
-    <button type="submit" [disabled]='dataform.invalid'  class="btn btn-danger" style="margin-right: 10px; width: 120px; height: 40px;"> update data</button>
-    
-    <button type="button" (click)="cancel()" class="btn btn-warning"  style="height: 40px; width: 120px ;">reset</button>
-</form>
-    
+            <input formControlName='Title' type="text" class="form-control" style="margin-top: 15px; height: 30px; width: 240px;">
+
+            <div class="alert alert-danger" *ngIf="!dataform?.get('Title')?.valid && dataform?.get('Title')?.touched">
+                password is a required field
+            </div>
+
+
+            <input formControlName='Price' type="number" class="form-control" style="margin-top: 15px; height: 30px; width: 240px;">
+
+
+            <div class="alert alert-danger" *ngIf="dataform?.get('Price')?.dirty && dataform?.get('Price')?.errors && dataform?.get('Price')?.errors?.priceRange">
+                price must be between 0 to 1000
+            </div>
+
+            <input formControlName='Quantity' type="mumber" class="form-control" style="margin-top: 25px; height: 30px; width: 240px;">
+
+            <div class="alert alert-danger" *ngIf="dataform?.get('Quantity')?.dirty && dataform?.get('Quantity')?.errors && dataform?.get('Quantity')?.errors?.QuantityRange">
+                Quantity must be between 0 to 1000
+            </div>
+
+            <input formControlName='ExpiryDate' type="text" class="form-control" style="margin-top: 25px; height: 30px; width: 240px;">
+
+
+
+
+
+            <br>
+
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" [value]="true" formControlName="isInstock">
+                <label class="form-check-label">In Stock</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" [value]="false" formControlName="isInstock">
+                <label class="form-check-label">Out of Stock</label>
+            </div>
+            <br>
+            <br>
+            <button type="submit" [disabled]='dataform.invalid' class="btn btn-danger" style="margin-right: 10px; width: 120px; height: 40px;"> update data</button>
+
+            <button type="button" (click)="cancel()" class="btn btn-warning" style="height: 40px; width: 120px ;">reset</button>
+        </form>
+
     </div>
 </div>
 

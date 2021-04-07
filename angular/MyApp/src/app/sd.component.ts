@@ -11,10 +11,9 @@ const template = `
  </div>
 
  <br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
 
-<p class="text-center" style="color: blue;">NOTE: This is an example of reactive programming where we are using a service whth an object of behaviour subject type which itself tell about any change in its state <br>
+
+<p class="text-center" style="color: grey;">This is an example of reactive programming where we are using a service whth an object of behaviour subject type which itself tell about any change in its state <br>
   here were have a property of type Iproduct and we are updating its price by calli8ng the function in a component and displaying the complete Iproduct data in another component.
 </p>
 `
