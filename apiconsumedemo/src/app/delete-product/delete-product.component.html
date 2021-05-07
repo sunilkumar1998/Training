@@ -1,4 +1,4 @@
-<div class="container" style="align-content: center;">
+<!-- <div class="container" style="align-content: center;">
     <form (ngSubmit)='Delete()' [formGroup]='DeleteForm' novalidate class="form">
 
         <label for="Id">Id</label>
@@ -22,4 +22,71 @@
 
 
     </form>
+</div> -->
+<h1 style="text-align: center; font-size: 2.5em; margin-top: 30px;">Delete Menu!</h1>
+<div class="container">
+    <form (ngSubmit)='submit()' [formGroup]='showform' novalidate class="form">
+        <label for="Title">Title</label>
+        <input type="text" formControlName='Title' class="form-control" id="Title" placeholder="Enter Title " readonly>
+        <div class="alert alert-danger"
+            *ngIf="loginForm?.get('Title')?.hasError('required') && loginForm?.get('Title')?.touched">
+            Title is Required
+        </div>
+
+        <label for="Price">Title</label>
+        <input type="number" formControlName='Price' class="form-control" id="Price" placeholder="Enter Price " readonly>
+        <div class="alert alert-danger"
+            *ngIf="loginForm?.get('Price')?.hasError('required') && loginForm?.get('Price')?.touched">
+            Price is Required
+        </div>
+
+        <label for="Quantity">Quantity</label>
+        <input type="number" formControlName='Quantity' class="form-control" id="Quantity" placeholder="Enter Quantity "
+            readonly>
+        <div class="alert alert-danger"
+            *ngIf="loginForm?.get('Quantity')?.hasError('required') && loginForm?.get('Quantity')?.touched">
+            Quantity is Required
+        </div>
+
+        <label for="Color">Color</label>
+        <input type="text" formControlName='Color' class="form-control" id="Color" placeholder="Enter Color" readonly>
+        <div class="alert alert-danger"
+            *ngIf="loginForm?.get('Color')?.hasError('required') && loginForm?.get('Color')?.touched">
+            Color is Required
+        </div>
+
+        <label for="ExpiryDate">ExpiryDate</label>
+        <input type="text" formControlName='expirydate' class="form-control" id="ExpiryDate"
+            placeholder="Enter ExpiryDate" onclick="(this.type ='date')" onkeyup="(this.type ='date')" readonly>
+        <div class="alert alert-danger"
+            *ngIf="loginForm?.get('expirydate')?.hasError('required') && loginForm?.get('expirydate')?.touched">
+            ExpiryDate is Required
+        </div>
+
+        <label for="instock">InStock:</label><br>
+        <div class="form-check form-check-inline">
+
+            <input class="form-check-input" formControlName="instock" type="radio" [value]="true" readonly>
+            <label class="form-check-label" for="inlineRadio1">In Stock</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+
+            <input class="form-check-input" formControlName="instock" type="radio" [value]="false" readonly>
+            <label class="form-check-label" for="inlineRadio1">Out of Stock</label>
+        </div>
+        <br>
+    </form>
+
+    
+    
 </div>
+<div class="container">
+<br>
+<!-- <div style="float: left;">
+        <button (click)="search()" class="btn btn-success">Search</button>
+    </div> -->
+<div>
+<button type="button"(click)="submit()"class="btn btn-danger mb-2">Confirm</button>
+</div>
+

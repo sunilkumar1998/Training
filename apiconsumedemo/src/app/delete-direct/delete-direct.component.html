@@ -1,0 +1,26 @@
+<h1 style="text-align: center; font-size: 2.5em; margin-top: 30px;">Delete Menu!</h1>
+<div class="container" style="align-content: center; margin-left: 520px; max-width: 600px; margin-top:20px;">
+    <form (ngSubmit)='Delete()' [formGroup]='DeleteForm' novalidate class="form">
+
+        <label style="margin-left: 10px; font-size: 1.5em;" for="Id">Id</label>
+
+        <input type="number" formControlName='id' class="form-control" id="id" placeholder="Enter Id of record to be deleted ">
+
+        <div class="alert alert-danger"
+            *ngIf="DeleteForm?.get('id')?.hasError('required') && DeleteForm?.get('id')?.touched">
+            ID is Required
+        </div>
+
+        <br>
+        <div>
+            <div style="float: left;">
+                <button [disabled]='DeleteForm.invalid' class="btn btn-primary">Delete</button>
+            </div>
+            <div style="float: right;">
+                <button type="reset" class="btn btn-danger mb-2">Reset</button>
+            </div>
+        </div>
+
+
+    </form>
+</div>

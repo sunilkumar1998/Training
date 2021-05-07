@@ -17,6 +17,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { DeleteProductComponent } from './delete-product/delete-product.component';
+import {MatTableModule} from '@angular/material/table';
+import { UsingMattableComponent } from './using-mattable/using-mattable.component';
+import { EditComponent } from './edit/edit.component';
+import { UpdateDirectComponent } from './update-direct/update-direct.component';
+import { DeleteDirectComponent } from './delete-direct/delete-direct.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,11 @@ import { DeleteProductComponent } from './delete-product/delete-product.componen
     ListProductWithAsyncComponent,
     AppProductComponent,
     UpdateProductComponent,
-    DeleteProductComponent
+    DeleteProductComponent,
+    UsingMattableComponent,
+    EditComponent,
+    UpdateDirectComponent,
+    DeleteDirectComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +48,8 @@ import { DeleteProductComponent } from './delete-product/delete-product.componen
     MatToolbarModule,
     MatListModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -40,10 +40,10 @@ export class AppService {
     )
   }
 
-  getProduct(id:number): Observable<Product[]>{
-    const apiurl= environment.apibaseurl + "Calc/items";
+  getProduct(id:number): Observable<Product>{
+    const apiurl= environment.apibaseurl + "Calc/items/" +id;
     const headers={'content-type': 'application/json'};
-    return this.http.get<Product[]>(apiurl,{'headers': headers}).pipe(
+    return this.http.get<Product>(apiurl,{'headers': headers}).pipe(
       catchError(this.handleError)
       )
   }

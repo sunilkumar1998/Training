@@ -1,26 +1,34 @@
-<h2 class="text-center">list-product-with-async </h2>
+<h2  style="text-align: center; font-size: 2.5em; margin-top: 30px;" class="text-center">list-product-with-async </h2>
 
-  <table class="text-center" style="width: 600px; margin-left: 150px; margin-top: 30px;">
+<table class="text-center" style="width: 150%; margin-left: 250px; margin-top: 30px;">
     <thead>
-      <tr>
-        <th>Id</th>
-        <th>Title</th>
-        <th>Price</th>
-        <th>Quantity</th>
-        <th>Color</th>
-        <th>Expiry Date</th>
-        <th>isInstock</th>
-      </tr>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Color</th>
+            <th>Expiry Date</th>
+            <th>isInstock</th>
+        </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let p of myProduct$ | async">
-        <td>{{p.id}}</td>
-        <td>{{p.title}}</td>
-        <td>{{p.price| currency:'INR'}}</td>
-        <td>{{p.quantity}}</td>
-        <td>{{p.color}}</td>
-        <td>{{p.expDate}}</td>
-        <td>{{p.isInstock}}</td>
-      </tr>
+        <tr *ngFor="let p of myProduct$ | async">
+            <td>
+                <a style="color: white;" [routerLink]="['/Product', p.id]">
+                    {{p.id}}
+                </a>
+
+            </td>
+            <td> <a style="color: white;" [routerLink]="['/Product', p.id]">
+                    {{p.title}}
+                </a></td>
+
+            <td>{{p.price| currency:'INR'}}</td>
+            <td>{{p.quantity}}</td>
+            <td>{{p.color}}</td>
+            <td>{{p.expDate}}</td>
+            <td>{{p.isInstock}}</td>
+        </tr>
     </tbody>
-  </table> 
+</table>

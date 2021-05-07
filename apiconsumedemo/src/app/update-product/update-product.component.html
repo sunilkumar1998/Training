@@ -1,9 +1,10 @@
+<h1 style="text-align: center; font-size: 2.5em; margin-top: 30px;">Update Menu!</h1>
 <div class="container" style="align-content: center;">
-    <form (ngSubmit)='Update()' [formGroup]='UpdateForm' novalidate class="form">
+    <form (ngSubmit)='Update()' [formGroup]='UpdateForm'  novalidate class="form">
 
         <label for="Id">Id</label>
 
-        <input type="number" formControlName='id' class="form-control" id="id" placeholder="Enter Id ">
+        <input type="number" formControlName='id' class="form-control" id="id" placeholder="Enter Id " readonly>
 
         <div class="alert alert-danger"
             *ngIf="UpdateForm?.get('id')?.hasError('required') && UpdateForm?.get('id')?.touched">
@@ -72,7 +73,7 @@
         <br>
         <div>
             <div style="float: left;">
-                <button [disabled]='UpdateForm.invalid' class="btn btn-primary">Update</button>
+                <button  class="btn btn-primary" >Update</button>
             </div>
             <div style="float: right;">
                 <button type="reset" class="btn btn-danger mb-2">Reset</button>
@@ -82,3 +83,4 @@
 
     </form>
 </div>
+
